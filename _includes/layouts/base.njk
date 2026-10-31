@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+    <head>
+
+    </head>
+
+
+    <body>
+        
+        <header>
+            <a href="/" class="Home-Link">Auburn Seal</a>
+
+            <nav>
+                <ul class="header-nav">
+                    {%- for entry in collections.all | eleventyNavigation %}
+                        <li class="header-item"><a href="{{entry.url}}">{{ entry.title }}</a></li>
+                    {%- endfor %}
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            
+        </main>
+    </body>
+</html>
